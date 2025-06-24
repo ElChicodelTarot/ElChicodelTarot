@@ -20,8 +20,8 @@ body, h1, h2, h3, p, ul, li, form {
 body {
   background: url('fondo-celeste.jpg') no-repeat center center fixed;
   background-size: cover;
-  position: relative;
   color: var(--text-light);
+  /* No usamos overlay ni body::before */
 }
 
 /* Si querés oscurecer levemente para que el texto resalte mejor */
