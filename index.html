@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Chico del Tarot</title>
+  <!-- Link al CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cap de página / header -->
+  <header style="background:#111; padding:20px; text-align:center; color:#eee;">
+    <h1 style="font-family:'Playfair Display', serif; margin:0;">El Chico del Tarot</h1>
+    <p style="opacity:0.8; margin-top:5px;"> APRENDÉ, CONECTÁ, SENTÍ y HABLÁ </p>
+  </header>
+
+  <!-- Sección Tarot -->
+ <section id="tarot">
+  <header class="tarot-hero">
+    <h2>🌟CURSOS DE TAROT🌟</h2>
+    <p> ¡ELEGI YA MISMO TU NIVEL Y EMPEZÁ AHORA! </p>
+  </header>
+
+  <div class="tarot-levels">
+    <!-- 🌟BÁSICO🌟 -->
+    <div class="tarot-card">
+      <h3>🌟BÁSICO🌟</h3>
+      <ul>
+        <li>🌟22 arcanos mayores – modo normal</li>
+        <li>🌟PDF combinaciones y significados</li>
+        <li>🌟Tiradas más usadas</li>
+        <li>🌟Sahumar y proteger tu espacio</li>
+        <li>🌟Sahumerios en PDF</li>
+        <li>🌟Audios para acompañar la práctica</li>
+        <li>🌟Asistencia WhatsApp 16–21h (siempre)</li>
+        <li><strong>🌟VALOR:</strong> ARS $25.000 /U$D 25 /€ 25</li>
+        <li><em>🌟Certificación opcional: +ARS 10.000 / USD 10 / EUR 10</em></li>
+      </ul>
+      <button class="tarot-buy-btn"
+        onclick="document.getElementById('tarot-form').scrollIntoView({ behavior: 'smooth' });">
+        Reservar Nivel
+      </button>
+    </div>
+
+    <!--🌟🌟INTERMEDIO🌟🌟 -->
+    <div class="tarot-card">
+      <h3>🌟🌟INTERMEDIO🌟🌟</h3>
+      <ul>
+        <li>🌟Arcanos mayores – normal e inverso</li>
+        <li>🌟PDF combinaciones y significados</li>
+        <li>🌟Tiradas más usadas</li>
+        <li>🌟Sahumar y proteger tu espacio</li>
+        <li>🌟Sahumerios en PDF</li>
+        <li>🌟Oraciones para urgencias</li>
+        <li>🌟Audios para acompañar la práctica</li>
+        <li>🌟Asistencia WhatsApp 16–21h (siempre)</li>
+        <li><strong>🌟Certificación:</strong> incluida</li>
+        <li><strong>🌟VALOR:</strong> ARS $50.000 /U$D 50 /€ 50</li>
+      </ul>
+      <button class="tarot-buy-btn"
+        onclick="document.getElementById('tarot-form').scrollIntoView({ behavior: 'smooth' });">
+        Reservar Nivel
+      </button>
+    </div>
+
+    <!--🌟🌟🌟Profesional🌟🌟🌟 -->
+    <div class="tarot-card">
+      <h3>🌟🌟🌟Profesional🌟🌟🌟</h3>
+      <ul>
+        <li>🌟Arcanos mayores – normal e inverso</li>
+        <li>🌟PDF combinaciones y significados (mayores)</li>
+        <li>🌟Arcanos menores – normal e inverso</li>
+        <li>🌟PDF combinaciones y significados (menores)</li>
+        <li>🌟Tiradas más usadas</li>
+        <li>🌟Sahumar y proteger + sahumerios en PDF</li>
+        <li>🌟Amuletos y talismanes (activación y limpieza)</li>
+        <li>🌟7 arcángeles: nombres, días, colores, usos y oraciones</li>
+        <li>🌟Oraciones para urgencias</li>
+        <li>🌟Audios para acompañar la práctica</li>
+        <li>🌟Asistencia WhatsApp 16–21h (siempre)</li>
+        <li><strong>🌟Certificación:</strong> incluida</li>
+        <li><strong>🌟VALOR:</strong> ARS $80.000 /U$D 80 /€ 80</li>
+      </ul>
+      <button class="tarot-buy-btn"
+        onclick="document.getElementById('tarot-form').scrollIntoView({ behavior: 'smooth' });">
+        Reservar Nivel
+      </button>
+    </div>
+  </div>
+
+  <!-- Formulario -->
+  <form id="tarot-form" action="https://formsubmit.co/elchicodeltarot@gmail.com" method="POST">
+    <h3>Reservá tu curso y elegí tu forma de pago</h3>
+    <label>Nombre completo:</label>
+    <input type="text" name="nombre" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Teléfono (Código de País + Tú número de Celular):</label>
+    <input type="tel" name="telefono" required>
+    <label>Nivel elegido:</label>
+    <select name="nivel" required>
+      <option value="">Seleccione...</option>
+      <option value="🌟BÁSICO🌟">🌟BÁSICO🌟 ARS $25.000 / U$D 25 / €25</option>
+      <option value="🌟🌟INTERMEDIO🌟🌟">🌟🌟Intermedio🌟🌟 ARS $50.000 / U$D 50 / €50</option>
+      <option value="🌟🌟🌟Profesional🌟🌟🌟">🌟🌟🌟Profesional🌟🌟🌟 ARS $80.000 / U$D 80 / €80</option>
+    </select>
+    <label>Medio de pago:</label>
+    <select name="medio_pago" required>
+      <option value="">Seleccione...</option>
+      <option value="MercadoPagoAlias ElChicodelTarot">Ⓜ️MercadoPagoⓂ️(Alias: ElChicodelTarot)</option>
+      <option value="Brubank Pesos Alias SoyElChicodelTarot">🟣Brubank Pesos🟣(Alias: SoyElChicodelTarot)</option>
+      <option value="Brubank USD Alias TarotMundial">🟢Brubank USD🟢(Alias: TarotMundial)</option>
+      <option value="🔵PayPal🔵">PayPal</option>
+    </select>
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <button type="submit">Enviar inscripción</button>
+  </form>
+
+  <!-- Opciones de pago visual -->
+  <div class="tarot-pay-options">
+    <p><strong>💳 Opciones de pago:</strong></p>
+    <ul>
+      <li>MercadoPago (Alias): <code>ElChicodelTarot</code></li>
+      <li>Brubank Pesos (Alias): <code>SoyElChicodelTarot</code></li>
+      <li>Brubank USD (Alias): <code>TarotMundial</code></li>
+      <li>PayPal: <a href="https://www.paypal.com/paypalme/imCristianCabrera" target="_blank">Pagar con PayPal</a></li>
+    </ul>
+  </div>
+</section>
+
+  <!-- Pie de página -->
+  <footer style="background:#111; padding:20px; text-align:center; color:#666;">
+    <p>&copy; 2025 🔮 El Chico del Tarot ®️ TODOS LOS DERECHOS RESERVADOS </p>
+  </footer>
+</body>
+</html>
