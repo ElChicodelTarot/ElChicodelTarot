@@ -25,7 +25,6 @@ body {
 }
 
 /* Si querés oscurecer levemente para que el texto resalte mejor */
-body::before {
   content: "";
   position: fixed;
   top:0; left:0; right:0; bottom:0;
@@ -66,17 +65,13 @@ header p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 20px;
-  align-items: start; /* Asegura que todas inicien alineadas */
+  /* Quitamos align-items y flex para que vuelva al diseño anterior */
 }
-
 #tarot div > div {
   background: var(--bg-card);
   padding: 20px;
   border-radius: var(--radius);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Fuerza la misma altura flexible */
-  height: 100%;
+  /* Eliminamos display:flex aquí también */
 }
 
 /* ...resto del CSS ya aplicado anteriormente... */
