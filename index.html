@@ -1,113 +1,130 @@
-<section id="tarot" style="background:#111; padding:40px; color:#eee; border-radius:8px; max-width:800px; margin:50px auto; font-family: 'Playfair Display', serif;">
-  <h2 style="text-align:center; font-size:2.5em; margin-bottom:10px;">🌟 Cursos de Tarot</h2>
-  <p style="text-align:center; opacity:0.8; margin-bottom:30px;">Elegí tu nivel y accedé a material, asistencia y certificación.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Chico del Tarot</title>
+  <!-- Link al CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Cap de página / header -->
+  <header style="background:#111; padding:20px; text-align:center; color:#eee;">
+    <h1 style="font-family:'Playfair Display', serif; margin:0;">El Chico del Tarot</h1>
+    <p style="opacity:0.8; margin-top:5px;">Conectá, aprendé y crecé espiritualmente</p>
+  </header>
 
-  <!-- Bloques de nivel -->
-  <div style="display:grid; grid-template-columns:1fr; gap:30px;">
+  <!-- Sección Tarot -->
+  <section id="tarot">
+    <h2>🌟 Cursos de Tarot</h2>
+    <p>Elegí tu nivel y accedé a material, asistencia y certificación.</p>
 
-    <!-- Principiante -->
-    <div style="background:#222; padding:20px; border-radius:8px;">
-      <h3>Principiante</h3>
-      <ul>
-        <li>22 arcanos mayores – modo normal</li>
-        <li>PDF combinaciones y significados</li>
-        <li>Tiradas más usadas</li>
-        <li>Cómo sahumar y proteger el espacio</li>
-        <li>Sahumerios (olores y significados) en PDF</li>
-        <li>Audios para acompañar la práctica</li>
-        <li>Asistencia WhatsApp 16–21h (siempre)</li>
-        <li>
-          <strong>Valor:</strong> ARS $25.000 / USD $25 / EUR €25<br>
-          <em>Certificación opcional (si no tenés nivel Intermedio): +ARS $5.000 / USD $5 / EUR €5</em>
-        </li>
-      </ul>
+    <div>
+      <!-- Principiante -->
+      <div>
+        <h3>Principiante</h3>
+        <ul>
+          <li>22 arcanos mayores – modo normal</li>
+          <li>PDF combinaciones y significados</li>
+          <li>Tiradas más usadas</li>
+          <li>Cómo sahumar y proteger el espacio</li>
+          <li>Sahumerios en PDF</li>
+          <li>Audios para acompañar la práctica</li>
+          <li>Asistencia WhatsApp 16–21h (siempre)</li>
+          <li><strong>Valor:</strong> ARS 25.000 / USD 25 / EUR 25</li>
+          <li><em>Certificación opcional: +ARS 5.000 / USD 5 / EUR 5</em></li>
+        </ul>
+      </div>
+
+      <!-- Intermedio -->
+      <div>
+        <h3>Intermedio</h3>
+        <ul>
+          <li>Arcanos mayores – normal e inverso</li>
+          <li>PDF combinaciones y significados</li>
+          <li>Tiradas más usadas</li>
+          <li>Sahumerio y protección del ambiente</li>
+          <li>Sahumerios en PDF</li>
+          <li>Oraciones poderosas para urgencias</li>
+          <li>Audios para acompañar la práctica</li>
+          <li>Asistencia WhatsApp 16–21h (siempre)</li>
+          <li><strong>Certificación:</strong> incluida</li>
+          <li><strong>Valor:</strong> ARS 50.000 / USD 50 / EUR 50</li>
+        </ul>
+      </div>
+
+      <!-- Profesional -->
+      <div>
+        <h3>Profesional</h3>
+        <ul>
+          <li>Arcanos mayores – normal e inverso</li>
+          <li>PDF combinaciones y significados (mayores)</li>
+          <li>Arcanos menores – normal e inverso</li>
+          <li>PDF combinaciones y significados (menores)</li>
+          <li>Tiradas más usadas</li>
+          <li>Sahumerio, protección y sahumerios en PDF</li>
+          <li>Amuletos y talismanes (activación y limpieza)</li>
+          <li>7 arcángeles: nombres, días, colores, usos, oraciones</li>
+          <li>Oraciones poderosas para urgencias</li>
+          <li>Audios de acompañamiento</li>
+          <li>Asistencia WhatsApp 16–21h (siempre)</li>
+          <li><strong>Certificación:</strong> incluida</li>
+          <li><strong>Valor:</strong> ARS 80.000 / USD 80 / EUR 80</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Intermedio -->
-    <div style="background:#222; padding:20px; border-radius:8px;">
-      <h3>Intermedio</h3>
+    <!-- Formulario -->
+    <form action="https://formsubmit.co/elchicodeltarot@gmail.com" method="POST">
+      <h3>Reservá tu curso y pagá directamente</h3>
+
+      <label>Nombre completo:</label>
+      <input type="text" name="nombre" required>
+
+      <label>Email:</label>
+      <input type="email" name="email" required>
+
+      <label>Teléfono (código + número):</label>
+      <input type="tel" name="telefono" required>
+
+      <label>Nivel elegido:</label>
+      <select name="nivel" required>
+        <option value="">Seleccione...</option>
+        <option value="Principiante">Principiante – ARS 25.000 / USD 25 / EUR 25</option>
+        <option value="Intermedio">Intermedio – ARS 50.000 / USD 50 / EUR 50</option>
+        <option value="Profesional">Profesional – ARS 80.000 / USD 80 / EUR 80</option>
+      </select>
+
+      <label>Medio de pago:</label>
+      <select name="medio_pago" required>
+        <option value="">Seleccione...</option>
+        <option value="MercadoPago Alias ElChicodelTarot">MercadoPago (Alias: ElChicodelTarot)</option>
+        <option value="Brubank Pesos Alias SoyElChicodelTarot">Brubank Pesos (Alias: SoyElChicodelTarot)</option>
+        <option value="Brubank USD Alias TarotMundial">Brubank USD (Alias: TarotMundial)</option>
+        <option value="PayPal">PayPal</option>
+      </select>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <button type="submit">Reservar + Pagar</button>
+    </form>
+
+    <!-- Medios de pago -->
+    <div>
+      <p><strong>💳 Opciones de pago:</strong></p>
       <ul>
-        <li>Arcanos mayores – normal e inverso</li>
-        <li>PDF combinaciones y significados</li>
-        <li>Tiradas más usadas</li>
-        <li>Sahumerio y protección del ambiente</li>
-        <li>Sahumerios en PDF</li>
-        <li>Oraciones poderosas para urgencias</li>
-        <li>Audios para acompañar la práctica</li>
-        <li>Asistencia WhatsApp 16–21h (siempre)</li>
-        <li><strong>Certificación:</strong> incluida</li>
-        <li><strong>Valor:</strong> ARS $50.000 / USD $50 / EUR €50</li>
+        <li>MercadoPago (Alias): <code>ElChicodelTarot</code></li>
+        <li>Brubank Pesos (Alias): <code>SoyElChicodelTarot</code></li>
+        <li>Brubank USD (Alias): <code>TarotMundial</code></li>
+        <li>PayPal: <a href="https://www.paypal.com/paypalme/imCristianCabrera" target="_blank">Pagar con PayPal</a></li>
       </ul>
     </div>
+  </section>
 
-    <!-- Profesional -->
-    <div style="background:#222; padding:20px; border-radius:8px;">
-      <h3>Profesional</h3>
-      <ul>
-        <li>22 arcanos mayores – normal e inverso</li>
-        <li>PDF combinaciones y significados</li>
-        <li>56 arcanos menores – normal e inverso</li>
-        <li>PDF combinaciones y significados</li>
-        <li>Tiradas más usadas</li>
-        <li>Sahumur, protección y sahumerios en PDF</li>
-        <li>Amuletos y talismanes (activación y limpieza)</li>
-        <li>7 arcángeles: nombres, días, colores, usos y oraciones</li>
-        <li>Oraciones poderosas para urgencias</li>
-        <li>Audios de acompañamiento</li>
-        <li>Asistencia WhatsApp 16–21h (siempre)</li>
-        <li><strong>Certificación:</strong> incluida</li>
-        <li><strong>Valor:</strong> ARS $80.000 / USD $80 / EUR €80</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <!-- Formulario y pago -->
-  <form action="https://formsubmit.co/tuemail@ejemplo.com" method="POST" style="margin-top:30px; background:#222; padding:20px; border-radius:8px;">
-    <h3 style="margin-top:0;">Completá tus datos para reservar tu curso:</h3>
-
-    <label>Nombre completo:</label><br>
-    <input type="text" name="nombre" required style="width:100%; padding:8px; margin:5px 0 15px;"><br>
-
-    <label>Email de contacto:</label><br>
-    <input type="email" name="email" required style="width:100%; padding:8px; margin:5px 0 15px;"><br>
-
-    <label>Teléfono (código + número):</label><br>
-    <input type="tel" name="telefono" required style="width:100%; padding:8px; margin:5px 0 15px;"><br>
-
-    <label>Nivel elegido:</label><br>
-    <select name="nivel" required style="width:100%; padding:8px; margin:5px 0 15px;">
-      <option value="">Seleccionar nivel...</option>
-      <option value="Principiante">Principiante – ARS 25.000 / USD 25 / EUR 25</option>
-      <option value="Intermedio">Intermedio – ARS 50.000 / USD 50 / EUR 50</option>
-      <option value="Profesional">Profesional – ARS 80.000 / USD 80 / EUR 80</option>
-    </select><br>
-
-    <label>Medio de pago:</label><br>
-    <select name="medio_pago" required style="width:100%; padding:8px; margin:5px 0 20px;">
-      <option value="">Seleccionar...</option>
-      <option value="MercadoPago Alias ElChicodelTarot">MercadoPago (Alias: ElChicodelTarot)</option>
-      <option value="Brubank Pesos Alias SoyElChicodelTarot">Brubank Pesos (Alias: SoyElChicodelTarot)</option>
-      <option value="Brubank USD Alias TarotMundial">Brubank USD (Alias: TarotMundial)</option>
-      <option value="PayPal">PayPal</option>
-    </select>
-
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-
-    <button type="submit" style="width:100%; background:#00bfa5; color:#111; padding:12px; font-size:16px; border:none; border-radius:5px; cursor:pointer;">
-      Reservar + Pagar
-    </button>
-  </form>
-
-  <!-- Información de pago -->
-  <div style="margin-top:20px; background:#222; padding:15px; border-radius:8px; font-size:14px;">
-    <p><strong>💳 Opciones de pago:</strong></p>
-    <ul style="list-style:none; padding-left:0;">
-      <li>MercadoPago (Alias): <code>ElChicodelTarot</code></li>
-      <li>Brubank Pesos (Alias): <code>SoyElChicodelTarot</code></li>
-      <li>Brubank USD (Alias): <code>TarotMundial</code></li>
-      <li>PayPal: <a href="https://www.paypal.com/paypalme/imCristianCabrera" target="_blank" style="color:#00bfff;">Pagar con PayPal</a></li>
-    </ul>
-  </div>
-</section>
+  <!-- Pie de página -->
+  <footer style="background:#111; padding:20px; text-align:center; color:#666;">
+    <p>&copy; 2025 El Chico del Tarot</p>
+  </footer>
+</body>
+</html>
